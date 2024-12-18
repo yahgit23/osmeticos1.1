@@ -1,0 +1,111 @@
+/* General */
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+/* Container del video */
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Logo centrado y clickable */
+.btn.logo-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.btn.logo-btn img.mariposa {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Mariposas dinámicas adicionales */
+.mariposa-voladora {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  pointer-events: none;
+  animation: floatEffect 4s ease-in-out infinite alternate;
+}
+
+/* Mariposa estática */
+.static-mariposa {
+  position: absolute;
+  top: 70%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  transition: transform 0.5s ease;
+}
+
+.static-mariposa:hover {
+  transform: scale(1.1) translateY(-5px);
+}
+
+/* Botón Start */
+.start-button {
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ff5722;
+  color: #fff;
+  font-weight: bold;
+  padding: 20px 40px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #e64a19;
+}
+
+/* Animación de vuelo sutil */
+@keyframes floatEffect {
+  0%, 100% {
+    transform-origin: center;
+    transform: scale(1.05) translateY(0);
+  }
+  50% {
+    transform-origin: center;
+    transform: scale(1.1) translateY(-15px);
+  }
+}
+
+
+
+

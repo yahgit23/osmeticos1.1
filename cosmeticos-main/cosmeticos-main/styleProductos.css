@@ -1,0 +1,162 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  header .logo h1 {
+    font-size: 28px;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  header nav ul li {
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  header .icons a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 18px;
+  }
+  
+  /* Main Section */
+  .intro {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    margin: 20px;
+  }
+  
+  .sidebar {
+    width: 25%;
+    border-right: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .sidebar h3 {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar li {
+    margin-bottom: 8px;
+  }
+  
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    width: 75%;
+  }
+  
+  .product {
+    position: relative;
+    width: 30%;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  
+  .product h4 {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #e74c3c;
+  }
+  
+
+  /* Efecto de animación al pasar el mouse sobre la imagen del producto */
+.product img {
+    transition: transform 0.3s ease; /* Transición suave */
+  }
+  
+  .product:hover img {
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen al 105% */
+  }
+
+  /* Estilo base para los botones de navegación */
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 16px; /* Espacio dentro del enlace */
+    border-radius: 4px; /* Bordes redondeados */
+    transition: all 0.3s ease; /* Transición suave */
+  }
+  
+  /* Efecto de sombra al pasar el mouse por encima de los enlaces */
+  header nav ul li a:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    background-color: #ecf0f1; /* Fondo suave */
+  }
+  
+  /* Efecto cuando el enlace tiene foco (como cuando se selecciona) */
+  header nav ul li a:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    background-color: #ecf0f1; /* Fondo suave */
+  }
+
+ /* Estilo del banner de imagen */
+.banner {
+    width: 100%;
+    height: 300px; /* Ajusta la altura según necesites */
+    background-color: #040404; /* Fondo claro para cuando la imagen no cargue */
+    overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
+  }
+  
+  .banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra todo el área sin distorsionarse */
+  }
